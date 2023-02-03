@@ -23,5 +23,262 @@ h1{
 }
 
 /*main*/
+.localisation{
+    width: 100%;
+    background-color: #EAEAEA;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pointlocalisation{
+    color: #353535;
+    margin-right: 15px;
+}
+
+.localisation p{
+    color: #353535;
+    font-weight: 700;
+    font-size: 16px;
+}
+
+/*main - Section class=réservation*/
+.réservation{
+    width: 100%;
+    height: 290px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.réservation h2{
+    margin: 0px;
+    margin-top: 40px;
+    font-weight: 700;
+    font-size: 24px;
+    text-align: center;
+}
+
+.réservation p{
+    margin: 0px;
+    margin-top: 15px;
+    font-weight: 300;
+    font-size: 18px;
+    text-align: center;
+}
+
+.bouton{
+    margin-top: 30px;
+    width: 60%;
+    text-decoration: none;
+    background: linear-gradient(200.64deg, #9356DC -5.2%, #FF79DA 110.74%);
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+    border-radius: 25px;
+}
+
+.bouton p{
+    margin: 0px;
+    color: white;
+    font-weight: 500;
+    font-size: 16px;
+    display: flex;
+    justify-content: center;
+    padding: 13px 19px 13px 19px;
+}
+
+/*main - Section class=fonctionnement*/
+.fonctionnement{
+    background-color: #FFFFFF;
+    width: 100%;
+    height: 440px;
+}
+
+.fonctionnement h2{
+    margin: 0px;
+    font-weight: 900;
+    font-size: 24px;
+    padding-top: 50px;
+    padding-left: 20px;
+}
+
+.misenforme{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card1{
+    width: 85%;
+    height: 73px;
+    margin-top: 25px;
+    background: #F7F7F7;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.card1:hover{
+    background: #9356DC;
+    opacity: 0.1;
+}
+
+.numéros{
+    width: 24px;
+    height: 24px;
+    background: #9356DC;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    right: 3%;
+}
+
+
+.fonction{
+    text-decoration: none;
+    color: black;
+    display: flex;
+    align-items: center;
+}
+
+.fonction p{
+    font-weight: 700;
+    font-size: 16px;
+}
+
+.coloricone{
+    color: #7E7E7E;
+    padding-left: 10px;
+    padding-right: 28px;
+    display: flex;
+    align-items: center;
+}
+
+.coloricone:hover{
+    color: #9356DC;
+}
+
+/*main - Section class=restaurants*/
+#restaurants h2{
+    margin: 0px;
+    padding-top: 55px;
+    padding-left: 20px;
+    font-weight: 900;
+    font-size: 24px;
+}
+
+.restaurants{
+    width: 100%;
+    height: 1230px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card2{
+    width: 90%;
+    height: 260px;
+    margin-top: 18px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+}
+
+.nouveau{
+    margin: 0px;
+    color: #008766;
+    font-weight: 500;
+    font-size: 14px;
+    background: #99E2D0;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 2px;
+    padding: 7px 10px 7px 10px;
+    position: relative;
+    z-index: 3;
+    left: 120px;
+    top: 63px;
+
+}
+
+.lien{
+    text-decoration: none;
+    color: black;
+    width: 100%;
+}
+
+.card2 img{
+    object-fit: cover;
+    width: 100%;
+    height: 194px;
+    border-radius: 15px 15px 0px 0px;
+    position: relative;
+    z-index: 2;
+}
+
+.gras{
+    margin: 0px;
+    padding-top: 16px;
+    padding-left: 13px;
+    font-weight: 900;
+    font-size: 18px;
+}
+
+.lien p{
+    margin: 0px;
+    padding-top: 5px;
+    padding-left: 13px;
+    font-weight: 300;
+    font-size: 17px;
+}
+
+.heart{
+    position: relative;
+    left: 900%;
+    bottom: 30px;
+}
+
+/*footer*/
+footer{
+    width: 100%;
+    height: 200px;
+    background: #353535;
+    color: #FFFFFF;
+}
+
+footer h2{
+    margin: 0px;
+    padding-top: 20px;
+    padding-left: 25px;
+    padding-bottom: 16px;
+    font-family: 'Shrikhand';
+    font-style: italic;
+    font-weight: 400;
+    font-size: 18px;
+}
+
+.lien2{
+    text-decoration: none;
+    color: #FFFFFF;
+    padding-left: 25px;
+    display: flex;
+    align-items: center;
+}
+
+.lien2 p{
+    margin: 0px;
+    padding-top: 7px;
+}
+
+.icone1{
+    margin: 0px;
+    margin-right: 10px;
+}
+
 
 
