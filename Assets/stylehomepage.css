@@ -7,7 +7,7 @@ body{
 /*header*/
 header{
     box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.15);
-    height: 96px;
+    height: 63px;
     width: 100%;
     display:flex;
     align-items: center;
@@ -133,7 +133,7 @@ h1{
     justify-content: center;
     align-items: center;
     position: relative;
-    right: 3%;
+    right: 4%;
 }
 
 
@@ -241,6 +241,8 @@ h1{
     position: relative;
     left: 900%;
     bottom: 30px;
+    font-size: 14px;
+    line-height: 14px;
 }
 
 /*footer*/
@@ -267,7 +269,6 @@ footer h2{
     color: #FFFFFF;
     padding-left: 25px;
     display: flex;
-    align-items: center;
 }
 
 .lien2 p{
@@ -276,8 +277,23 @@ footer h2{
 }
 
 .icone1{
-    margin: 0px;
     margin-right: 10px;
+    padding-top: 7px;
+    font-size: 12px;
+    display: flex;
+    align-items: center;
+}
+
+/*Desktop - tablette*/
+@media screen and (min-width: 600px){
+    /*footer*/
+    footer{
+        height: 100px;
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+    }
+    
 }
 
 
