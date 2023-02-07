@@ -204,3 +204,25 @@ footer h2{
     display: flex;
     align-items: center;
 }
+
+@media screen and (min-width: 600px){
+    /*footer*/
+    footer{
+        height: 100px;
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+    }
+    footer h2{
+        margin-right: 80px;
+    }
+    .pieddepage{
+        padding-right: 40px;
+        display: flex;
+    }
+
+    .lien2{
+        padding-right: 20px;
+    }
+    
+}
