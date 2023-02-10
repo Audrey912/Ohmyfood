@@ -118,11 +118,11 @@ h1{
     border-radius: 20px;
     display: flex;
     align-items: center;
+    position: relative;
 }
 
 .card1:hover{
-    background: #9356DC;
-    opacity: 0.1;
+    background: #F5EDFF;
 }
 
 .numéros{
@@ -133,10 +133,9 @@ h1{
     display: flex;
     justify-content: center;
     align-items: center;
-    position: relative;
-    right: 4%;
+    position: absolute;
+    left: -14px;
 }
-
 
 .fonction{
     text-decoration: none;
@@ -152,7 +151,7 @@ h1{
 
 .coloricone{
     color: #7E7E7E;
-    padding-left: 10px;
+    padding-left: 35px;
     padding-right: 28px;
     display: flex;
     align-items: center;
@@ -191,6 +190,7 @@ h1{
     background: #FFFFFF;
     box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
     border-radius: 15px;
+    position: relative;
 }
 
 .nouveau{
@@ -202,10 +202,10 @@ h1{
     box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.15);
     border-radius: 2px;
     padding: 7px 10px 7px 10px;
-    position: relative;
+    position: absolute;
     z-index: 3;
-    left: 120px;
-    top: 63px;
+    right: 20px;
+    top: 15px;
 
 }
 
@@ -236,15 +236,14 @@ h1{
     margin: 0px;
     padding-top: 5px;
     padding-left: 13px;
-    font-weight: 300;
     font-size: 17px;
 }
 
 .heart{
-    position: relative;
-    left: 900%;
-    bottom: 30px;
-    font-size: 14px;
+    position: absolute;
+    right: 30px;
+    bottom: 25px;
+    font-size: 20px;
     line-height: 14px;
 }
 
@@ -317,15 +316,20 @@ footer h2{
     #restaurants{
         height: 440px;
     }
-    
+
     #restaurants h2{
         padding-left: 195px;
     }
 
     .restaurants{
-        height: 445px;
         display: flex;
         flex-direction: row;
+        padding-left: 195px;
+    }
+
+    .card2{
+        margin-top: 25px;
+        margin-left: 25px;
     }
 
     /*footer*/
