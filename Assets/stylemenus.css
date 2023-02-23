@@ -99,6 +99,84 @@ h2{
     margin-top: 25px;
 }
 
+.article1{
+    animation-delay: 200ms;
+    animation-duration: 1500ms;
+    animation-name: slide1;
+}
+
+@keyframes slide1{
+    0%{
+        margin-left: 100%;
+        opacity: 0;
+    }
+
+    25%{
+        opacity: 0;
+    }
+
+    50%{
+        opacity: .25;
+    }
+
+    100%{
+        position: initial;
+        opacity: 1;
+    }
+}
+
+.article2{
+    animation-delay: 1700ms;
+    animation-duration: 1500ms;
+    animation-name: slide1;
+}
+
+@keyframes slide1{
+    0%{
+        margin-left: 100%;
+        opacity: 0;
+    }
+
+    25%{
+        opacity: 0;
+    }
+
+    50%{
+        opacity: .25;
+    }
+
+    100%{
+        position: initial;
+        opacity: 1;
+    }
+}
+
+.article3{
+    animation-delay: 3200ms;
+    animation-duration: 1500ms;
+    animation-name: slide1;
+}
+
+@keyframes slide1{
+    0%{
+        margin-left: 100%;
+        opacity: 0;
+    }
+
+    25%{
+        opacity: 0;
+    }
+
+    50%{
+        opacity: .25;
+    }
+
+    100%{
+        position: initial;
+        opacity: 1;
+    }
+}
+
 h3{
     margin: 0px;
     margin-left: 15px;
@@ -187,6 +265,12 @@ p{
     -moz-border-radius: 20px;
     -ms-border-radius: 20px;
     -o-border-radius: 20px;
+}
+
+.coche:hover{
+    animation-name: valide;
+    animation-duration: 500ms;
+    transform-origin: right;
 }
 
 #bouton{
