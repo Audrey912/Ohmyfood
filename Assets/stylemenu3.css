@@ -22,11 +22,10 @@ header{
     bottom: 0%;
 }
 
-h1{
-    font-family : 'Shrikhand';
-    font-style: italic;
-    font-size: 30px;
-    margin: 0px;
+.logo{
+    object-fit: contain;
+    width: 160px;
+    height: 45px;
 }
 
 .flèche{
@@ -58,6 +57,7 @@ img{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    position: relative;
 }
 
 h2{
@@ -72,7 +72,30 @@ h2{
     font-size: 20px;
 }
 
-.article{
+.animheart{
+    font-size: 20px;
+    position: absolute;
+    right: 20px;
+    opacity: 0;
+    color: transparent;
+ }
+ 
+ .animheart:hover{
+     opacity: 1;
+     background: linear-gradient(200.64deg, #9356DC -5.2%, #FF79DA 110.74%);
+     background-clip: text;
+     -webkit-background-clip: text;
+     transform-origin: bottom;
+     transition: 800ms;
+     -webkit-transition: 800ms;
+     -moz-transition: 800ms;
+     -ms-transition: 800ms;
+     -o-transition: 800ms;
+ }
+
+.article1,
+.article2,
+.article3{
     margin-top: 25px;
 }
 
@@ -145,6 +168,27 @@ p{
     color: #353535;
 }
 
+.coche{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 60px;
+    height: 70px;
+    background: #99E2D0;
+    border-radius: 0px 15px 15px 0px;
+}
+
+.check{
+    background: #FFFFFF;
+    color: #99E2D0;
+    border-radius: 20px;
+    padding: 5px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+}
+
 #bouton{
     margin-top: 25px;
     width: 100%;
@@ -213,8 +257,18 @@ footer h2{
 }
 
 @media screen and (min-width: 600px){
+    .logo{
+        width: 200px;
+        height: 55px;
+    }
+
+    .homepage{
+        position: absolute;
+        top: 25px;
+    }
+
     img{
-        height: 540px;
+        height: 360px;
     }
 
     section{
@@ -226,7 +280,7 @@ footer h2{
         width: 80%;
         height: 1350px;
         position: absolute;
-        top: 450px
+        top: 390px
     }
 
     .titre{
@@ -239,7 +293,14 @@ footer h2{
         margin-left: 25px;
     }
 
-    .article{
+    .animheart{
+        position: absolute;
+        right: 452px;
+    }
+
+    .article1,
+    .article2,
+    .article3{
         width: 100%;
         margin-left: 210px;
         display: flex;
@@ -248,6 +309,10 @@ footer h2{
 
     .block{
         width: 70%;
+    }
+
+    #bouton{
+        margin-top: 55px;
     }
 
     /*footer*/
