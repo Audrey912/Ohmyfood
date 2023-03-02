@@ -311,13 +311,11 @@ header{
    background: linear-gradient(200.64deg, #9356DC -5.2%, #FF79DA 110.74%);
    background-clip: text;
    -webkit-background-clip: text;
-   transform-origin: top;
    transition-duration: 800ms;
 }
 
 .animheart:hover{
     opacity: 1;
-    transform-origin: top;
     transition-duration: 800ms;
 }
 

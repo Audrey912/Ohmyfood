@@ -59,8 +59,50 @@ h2{
     right: 40px;
 }
 
-.title{
+.title1,
+.title2,
+.title3{
     margin-top: 30px;
+}
+
+.article1,
+.article2,
+.article3,
+.title1,
+.title2,
+.title3{
+    opacity: 0;
+    animation-name: slide1;
+    animation-duration: 800ms;
+    animation-fill-mode: both;
+}
+
+.article1,
+.title1{
+    animation-delay: 200ms;
+}
+
+.article2,
+.title2{
+    animation-delay: 400ms;
+}
+
+.article3,
+.title3{
+    animation-delay: 600ms;
+}
+
+@keyframes slide1{
+    from{
+        opacity:0;
+        transform: translate(2000px);
+        transform-origin: right left;
+}
+
+    to{
+        opacity: 1;
+        transform: translate(0px);
+    }
 }
 
 h3{
@@ -149,6 +191,18 @@ p{
     padding: 5px;
 }
 
+.coche,
+.check{
+    opacity: 0;
+    transform-origin: right;
+    transition-duration: 400ms;
+}
+
+.coche:hover{
+    opacity: 1;
+    transition-duration: 400ms;
+}
+
 #bouton{
     padding-bottom: 40px;
     width: 100%;
@@ -191,8 +245,10 @@ p{
         right: 375px;
     }
 
-    .title{
-        margin-left: 165px;
+    .title1,
+    .title2,
+    .title3{
+        margin-left: 15%;
     }
 
     .article1,
@@ -206,5 +262,10 @@ p{
 
     .block{
         width: 70%;
+    }
+
+    .prix{
+        position: absolute;
+        right: 25px;
     }
 }
