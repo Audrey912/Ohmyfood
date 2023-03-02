@@ -185,6 +185,8 @@ header{
     width: 24px;
     height: 24px;
     background: #9356DC;
+    color: #FFFFFF;
+    font-weight: 200;
     border-radius: 100%;
     display: flex;
     justify-content: center;

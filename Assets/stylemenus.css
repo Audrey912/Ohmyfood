@@ -96,7 +96,7 @@ h2{
     from{
         opacity:0;
         transform: translate(2000px);
-        transform-origin: right left;
+        transform-origin: right;
 }
 
     to{
@@ -195,12 +195,12 @@ p{
 .check{
     opacity: 0;
     transform-origin: right;
-    transition-duration: 400ms;
+    transition-duration: 800ms;
 }
 
 .coche:hover{
     opacity: 1;
-    transition-duration: 400ms;
+    transition-duration: 800ms;
 }
 
 #bouton{
