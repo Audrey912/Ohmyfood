@@ -73,22 +73,11 @@ header{
 }
 
 .logo{
-    width: 200px;
+    width: 162px;
     height: 44px;
 }
 
-.homepage/*header menus*/{
-    position: absolute;
-    left: 5%;
-    top: 25px;
-}
-
-.flèche/*header menus*/{
-    color: #353535;
-    font-size: 18px;
-}
-
-/*home page - main*/
+/*main*/
 .localisation{
     width: 100%;
     background-color: #EAEAEA;
@@ -319,15 +308,17 @@ header{
 .animheart{
    opacity: 0;
    color: transparent;
+   background: linear-gradient(200.64deg, #9356DC -5.2%, #FF79DA 110.74%);
+   background-clip: text;
+   -webkit-background-clip: text;
+   transform-origin: top;
+   transition-duration: 800ms;
 }
 
 .animheart:hover{
     opacity: 1;
-    background: linear-gradient(200.64deg, #9356DC -5.2%, #FF79DA 110.74%);
-    background-clip: text;
-    -webkit-background-clip: text;
-    transform-origin: bottom;
-    transition: 800ms;
+    transform-origin: top;
+    transition-duration: 800ms;
 }
 
 /*footer*/

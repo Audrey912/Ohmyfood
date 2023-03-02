@@ -1,21 +1,34 @@
+/*header*/
+.homepage{
+    position: absolute;
+    left: 5%;
+    top: 25px;
+}
+
+.flèche{
+    color: #353535;
+    font-size: 18px;
+}
 
 /*main*/
-img{
+.img{
     width: 100%;
     height: 275px;
     object-fit: cover;
+    position: relative;
+    z-index: 1;
 }
 
 .votrechoix{
     background-color: #F7F7F7;
     width: 100%;
-    height: 1260px;
+    margin-top: -55px;
     background: #F7F7F7;
     border-radius: 40px 40px 0px 0px;
-    position: absolute;
-    top: 280px;
     display: flex;
     flex-direction: column;
+    position: relative;
+    z-index: 2;
 }
 
 .titre{
@@ -34,117 +47,20 @@ h2{
     font-size: 28px;
 }
 
-.heart{
+.heart1{
     font-size: 20px;
+    position: absolute;
+    right: 40px;
 }
 
 .animheart{
     font-size: 20px;
     position: absolute;
-    right: 20px;
-    opacity: 0;
-    color: transparent;
- }
- 
- .animheart:hover{
-     opacity: 1;
-     background: linear-gradient(200.64deg, #9356DC -5.2%, #FF79DA 110.74%);
-     background-clip: text;
-     -webkit-background-clip: text;
-     transform-origin: bottom;
-     transition: 800ms;
-     -webkit-transition: 800ms;
-     -moz-transition: 800ms;
-     -ms-transition: 800ms;
-     -o-transition: 800ms;
- }
-
-.article1,
-.article2,
-.article3{
-    margin-top: 25px;
+    right: 40px;
 }
 
-.article1{
-    animation-delay: 200ms;
-    animation-duration: 1500ms;
-    animation-name: slide1;
-}
-
-@keyframes slide1{
-    0%{
-        margin-left: 100%;
-        opacity: 0;
-    }
-
-    25%{
-        opacity: 0;
-    }
-
-    50%{
-        opacity: .25;
-    }
-
-    100%{
-        position: initial;
-        opacity: 1;
-    }
-}
-
-.article2{
-    animation-delay: 1700ms;
-    animation-duration: 1500ms;
-    animation-name: slide1;
-}
-
-@keyframes slide1{
-    0%{
-        margin-left: 100%;
-        opacity: 0;
-    }
-
-    25%{
-        opacity: 0;
-    }
-
-    50%{
-        opacity: .25;
-    }
-
-    100%{
-        position: initial;
-        opacity: 1;
-    }
-}
-
-.article3{
-    animation-delay: 3200ms;
-    animation-duration: 1500ms;
-    animation-name: slide1;
-}
-
-@keyframes slide1{
-    0%{
-        transform: translate();
-        opacity: 0;
-        -webkit-transform: translate();
-        -moz-transform: translate();
-        -ms-transform: translate();
-        -o-transform: translate();
-}
-
-    25%{
-        opacity: 0;
-    }
-
-    50%{
-        opacity: .25;
-    }
-
-    100%{
-        position: initial;
-        opacity: 1;
-    }
+.title{
+    margin-top: 30px;
 }
 
 h3{
@@ -208,23 +124,6 @@ p{
     right: 18px;
 }
 
-.prix:hover{
-    animation-name: prix;
-    animation-duration: 600ms;
-    transform-origin: right;
-}
-
-@keyframes prix{
-    from{
-        position: absolute;
-        right: 18px;
-    }
-
-    to{
-        position: absolute;
-        right: 60px;
-    }
-}
 .prix p{
     font-weight: 700;
     font-size: 15px;
@@ -237,7 +136,7 @@ p{
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 0px;
+    width: 60px;
     height: 70px;
     background: #99E2D0;
     border-radius: 0px 15px 15px 0px;
@@ -248,93 +147,13 @@ p{
     color: #99E2D0;
     border-radius: 20px;
     padding: 5px;
-    -webkit-border-radius: 20px;
-    -moz-border-radius: 20px;
-    -ms-border-radius: 20px;
-    -o-border-radius: 20px;
-}
-
-.coche:hover{
-    animation-name: valide;
-    animation-duration: 500ms;
-    transform-origin: right;
-}
-
-@keyframes valide{
-    from {
-        width: 0px;
-    }
-
-    to{
-        width: 50px;
-    }
 }
 
 #bouton{
-    margin-top: 25px;
+    padding-bottom: 40px;
     width: 100%;
     display: flex;
     justify-content: center;
-}
-
-.bouton{
-    width: 186px;
-    text-decoration: none;
-    display: flex;
-    justify-content: center;
-    background: linear-gradient(200.64deg, #9356DC -5.2%, #FF79DA 110.74%);
-    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.35);
-    border-radius: 25px;
-}
-
-.bouton p{
-    margin: 0px;
-    padding: 15px 16px 15px 16px;
-    color: #FFFFFF;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 19px;
-}
-
-/*footer*/
-footer{
-    width: 100%;
-    height: 200px;
-    background: #353535;
-    color: #FFFFFF;
-    position: absolute;
-    top: 1450px;
-}
-
-footer h2{
-    margin: 0px;
-    padding-top: 20px;
-    padding-left: 25px;
-    padding-bottom: 16px;
-    font-family: 'Shrikhand';
-    font-style: italic;
-    font-weight: 400;
-    font-size: 18px;
-}
-
-.lien2{
-    text-decoration: none;
-    color: #FFFFFF;
-    padding-left: 25px;
-    display: flex;
-}
-
-.lien2 p{
-    margin: 0px;
-    padding-top: 7px;
-}
-
-.icone1{
-    margin-right: 10px;
-    padding-top: 7px;
-    font-size: 12px;
-    display: flex;
-    align-items: center;
 }
 
 @media screen and (min-width: 600px){
@@ -343,12 +162,7 @@ footer h2{
         height: 55px;
     }
 
-    .homepage{
-        position: absolute;
-        top: 25px;
-    }
-
-    img{
+    .img{
         height: 360px;
     }
 
@@ -359,8 +173,6 @@ footer h2{
 
     .votrechoix{
         width: 80%;
-        position: absolute;
-        top: 390px
     }
 
     .titre{
@@ -369,13 +181,18 @@ footer h2{
         justify-content: center;
     }
 
-    .heart{
-        margin-left: 25px;
+    .heart1{
+        position: absolute;
+        right: 375px;
     }
 
     .animheart{
         position: absolute;
-        right: 455px;
+        right: 375px;
+    }
+
+    .title{
+        margin-left: 165px;
     }
 
     .article1,
@@ -384,35 +201,10 @@ footer h2{
         width: 100%;
         display: flex;
         flex-direction: column;
+        align-items: center;
     }
 
     .block{
         width: 70%;
     }
-
-    #bouton{
-        margin-top: 55px;
-    }
-
-    /*footer*/
-    footer{
-        height: 100px;
-        display: flex;
-        flex-direction: row-reverse;
-        align-items: center;
-        position: absolute;
-        top: 1645px;
-    }
-    footer h2{
-        margin-right: 80px;
-    }
-    .pieddepage{
-        padding-right: 40px;
-        display: flex;
-    }
-
-    .lien2{
-        padding-right: 20px;
-    }
-    
 }
