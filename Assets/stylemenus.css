@@ -152,12 +152,14 @@ h4{
     font-weight: 700;
     font-size: 18px;
     padding-bottom: 5px;
+    text-overflow: ellipsis;
 }
 
 p{
     margin: 0px;
     font-size: 14px;
     font-weight: 300;
+    text-overflow: ellipsis;
 }
 
 .prix{
@@ -174,6 +176,11 @@ p{
     color: #353535;
 }
 
+.card:hover .prix{
+    position: absolute;
+    right: 80px;
+}
+
 .coche{
     display: flex;
     align-items: center;
@@ -182,6 +189,9 @@ p{
     height: 70px;
     background: #99E2D0;
     border-radius: 0px 15px 15px 0px;
+    transform: scale(0);
+    transform-origin: right;
+    transition-duration: 400ms;
 }
 
 .check{
@@ -191,16 +201,9 @@ p{
     padding: 5px;
 }
 
-.coche,
-.check{
-    opacity: 0;
-    transform-origin: right;
-    transition-duration: 800ms;
-}
-
-.coche:hover{
-    opacity: 1;
-    transition-duration: 800ms;
+.card:hover .coche{
+    transform:scale(1);
+    transition-duration: 400ms;
 }
 
 #bouton{
