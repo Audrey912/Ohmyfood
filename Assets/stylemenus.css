@@ -47,12 +47,7 @@ h2{
     font-size: 28px;
 }
 
-.heart1{
-    font-size: 20px;
-    position: absolute;
-    right: 40px;
-}
-
+.heart1,
 .animheart{
     font-size: 20px;
     position: absolute;
@@ -143,8 +138,16 @@ hr{
     position: relative;
 }
 
+.display{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
 .nom{
     padding-left: 10px;
+    overflow: hidden;
 }
 
 h4{
@@ -168,9 +171,8 @@ p{
 }
 
 .prix{
-    position: absolute;
-    bottom: 10px;
-    right: 18px;
+    padding-top: 20px;
+    padding-right: 20px;
 }
 
 .prix p{
@@ -182,8 +184,8 @@ p{
 }
 
 .card:hover .prix{
-    position: absolute;
-    right: 80px;
+    padding-right: 70px;
+    transition: 400ms;
 }
 
 .coche{
@@ -194,9 +196,11 @@ p{
     height: 70px;
     background: #99E2D0;
     border-radius: 0px 15px 15px 0px;
-    transform: scale(0);
+    transform: scaleX(0);
     transform-origin: right;
     transition-duration: 400ms;
+    position: absolute;
+    right: 0px;
 }
 
 .check{
@@ -207,7 +211,7 @@ p{
 }
 
 .card:hover .coche{
-    transform:scale(1);
+    transform:scaleX(1);
     transition-duration: 400ms;
 }
 
@@ -218,17 +222,12 @@ p{
     justify-content: center;
 }
 
-@media screen and (min-width: 600px){
-    .logo{
-        width: 200px;
-        height: 55px;
-    }
-
+@media screen and (min-width: 900px){
     .img{
         height: 360px;
     }
 
-    section{
+    .section{
         display: flex;
         justify-content: center;
     }
@@ -243,14 +242,10 @@ p{
         justify-content: center;
     }
 
-    .heart1{
-        position: absolute;
-        right: 375px;
-    }
-
+    .heart1,
     .animheart{
         position: absolute;
-        right: 375px;
+        left: 70%;
     }
 
     .title1,
@@ -270,10 +265,5 @@ p{
 
     .block{
         width: 70%;
-    }
-
-    .prix{
-        position: absolute;
-        right: 25px;
     }
 }
