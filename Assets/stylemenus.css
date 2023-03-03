@@ -152,14 +152,19 @@ h4{
     font-weight: 700;
     font-size: 18px;
     padding-bottom: 5px;
-    text-overflow: ellipsis;
 }
 
 p{
     margin: 0px;
     font-size: 14px;
     font-weight: 300;
+}
+
+h4,
+p{
+    overflow: hidden;
     text-overflow: ellipsis;
+    white-space: nowrap;
 }
 
 .prix{

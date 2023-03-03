@@ -361,7 +361,7 @@ footer h2{
 }
 
 /*Desktop - tablette*/
-@media screen and (min-width: 600px){
+@media screen and (min-width: 800px){
     /*home page - main*/
     .réservation{
         height: 230px;
