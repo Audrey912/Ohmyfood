@@ -54,6 +54,12 @@ h2{
     right: 40px;
 }
 
+.article1,
+.article2,
+.article3{
+    overflow: hidden;
+}
+
 .title1,
 .title2,
 .title3{
